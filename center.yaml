@@ -1,0 +1,50 @@
+input_files:
+  - "input.pcd"
+
+crop_box:
+  min: [261.0, 20.0, -0.1]
+  max: [263.7, 24.0, 0.8]
+  negative: false
+
+pmf:
+  max_window_size: 10
+  slope: 0.5
+  initial_distance: 0.1
+  max_distance: 0.5
+  cell_size: 0.2
+  base_max_window_size: 2
+  exponential_growth: true
+  height_threshold_scale: 1.2
+  num_threads: 4
+
+normal_filtering:
+  enabled: true
+  radius: 0.5
+  max_ground_angle: 15.0
+  min_wall_angle: 45.0
+
+edge_detection:
+  enabled: true
+  min_height_diff: 0.15
+  neighborhood_radius: 0.3
+  edge_buffer: 0.2
+
+multi_scale:
+  enabled: false
+  scales: [0.2, 0.5, 1.0]
+  voting_threshold: 0.6
+
+context_aware:
+  enabled: true
+  region_size: 2.0
+  wall_detection_threshold: 0.6
+  ground_continuity_weight: 0.8
+
+output_files:
+  ground: "ground.pcd"
+  nonground: "nonground.pcd"
+
+ec:
+  clustertolerance: 0.05
+  min_cluster_size: 10
+  max_cluster_size: 500
