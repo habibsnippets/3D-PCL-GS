@@ -50,5 +50,5 @@ ec:
   max_cluster_size: 500
 
 preprocessing:
-  voxel_downsampling: false
+  voxel_downsampling: true
   voxel_leaf_size: 0.05 //this is in meters i.e it is 5cm 

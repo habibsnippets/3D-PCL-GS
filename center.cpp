@@ -656,19 +656,6 @@ int main(int argc, char** argv)
     pcl::PointXYZ min_point_AABB, max_point_AABB;
     feature_extractor.getAABB(min_point_AABB, max_point_AABB);
 
-    // End processing timer
-    auto total_end_time = std::chrono::high_resolution_clock::now();
-    auto total_duration =  std::chrono::duration_cast<std::chrono::milliseconds>(total_end_time - total_start_time);
-    std::cout<< "Processing time (PMF .. clustering, excluding I/O & viz): "
-             << std::fixed << std::setprecision(6)
-             << (total_duration.count() / 1000.0) << " seconds" << std::endl;
-
-    // Also print individual stage durations for quick profiling (if we captured them)
-    // We captured pmf and normal & ec times above where applicable
-    try {
-        auto pmf_ms = std::chrono::duration_cast<std::chrono::milliseconds>(pmf_end - pmf_start).count();
-        std::cout << " PMF time: " << pmf_ms << " ms" << std::endl;
-    } catch (...) {}
 
     // Visualization
     pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer("3D Viewer"));
@@ -741,7 +728,17 @@ int main(int argc, char** argv)
 
     // Final runtime print (includes everything done earlier)
     // Note: total_duration above is algorithmic processing time only
-    std::cout << "Finished." << std::endl;
+
+
+    // End total timer here
+    auto total_end_time = std::chrono::high_resolution_clock::now();
+    auto total_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
+        total_end_time - total_start_time
+    );
+
+    std::cout << "Total time for execution: "
+              << (total_duration.count() / 1000.0)
+              << " seconds" << std::endl;
 
     return 0;
 }
