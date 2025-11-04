@@ -1,5 +1,5 @@
 input_files:
-  - "input.pcd"
+  - "/home/beast/Desktop/Habeeb/3D-PCL-GS/input.pcd"
 
 crop_box:
   min: [261.0, 20.0, -0.1]
@@ -13,12 +13,12 @@ pmf:
   max_distance: 0.5
   cell_size: 0.2
   base_max_window_size: 2
-  exponential_growth: true
+  exponential_growth: false
   height_threshold_scale: 1.2
   num_threads: 4
 
 normal_filtering:
-  enabled: true
+  enabled: false
   radius: 0.5
   max_ground_angle: 15.0
   min_wall_angle: 45.0
@@ -35,7 +35,7 @@ multi_scale:
   voting_threshold: 0.6
 
 context_aware:
-  enabled: true
+  enabled: false
   region_size: 2.0
   wall_detection_threshold: 0.6
   ground_continuity_weight: 0.8
@@ -48,3 +48,7 @@ ec:
   clustertolerance: 0.05
   min_cluster_size: 10
   max_cluster_size: 500
+
+preprocessing:
+  voxel_downsampling: false
+  voxel_leaf_size: 0.05 //this is in meters i.e it is 5cm 

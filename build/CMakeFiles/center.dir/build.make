@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/habeeb-chisti/GRemove
+CMAKE_SOURCE_DIR = /home/beast/Desktop/Habeeb/3D-PCL-GS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/habeeb-chisti/GRemove/build
+CMAKE_BINARY_DIR = /home/beast/Desktop/Habeeb/3D-PCL-GS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/center.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/center.dir/flags.make
 
 CMakeFiles/center.dir/center.cpp.o: CMakeFiles/center.dir/flags.make
 CMakeFiles/center.dir/center.cpp.o: ../center.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/habeeb-chisti/GRemove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/center.dir/center.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/center.dir/center.cpp.o -c /home/habeeb-chisti/GRemove/center.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/Desktop/Habeeb/3D-PCL-GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/center.dir/center.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/center.dir/center.cpp.o -c /home/beast/Desktop/Habeeb/3D-PCL-GS/center.cpp
 
 CMakeFiles/center.dir/center.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/center.dir/center.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/habeeb-chisti/GRemove/center.cpp > CMakeFiles/center.dir/center.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beast/Desktop/Habeeb/3D-PCL-GS/center.cpp > CMakeFiles/center.dir/center.cpp.i
 
 CMakeFiles/center.dir/center.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/center.dir/center.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/habeeb-chisti/GRemove/center.cpp -o CMakeFiles/center.dir/center.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beast/Desktop/Habeeb/3D-PCL-GS/center.cpp -o CMakeFiles/center.dir/center.cpp.s
 
 # Object files for target center
 center_OBJECTS = \
@@ -79,63 +79,182 @@ center_EXTERNAL_OBJECTS =
 
 center: CMakeFiles/center.dir/center.cpp.o
 center: CMakeFiles/center.dir/build.make
-center: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_features.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+center: /usr/local/lib/libpcl_segmentation.so
+center: /usr/local/lib/libpcl_visualization.so
+center: /usr/local/lib/libpcl_features.so
+center: /usr/local/lib/libpcl_kdtree.so
 center: /usr/lib/x86_64-linux-gnu/libboost_system.so
 center: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+center: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 center: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 center: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+center: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+center: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+center: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 center: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 center: /usr/lib/libOpenNI.so
 center: /usr/lib/libOpenNI2.so
-center: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libfreetype.so
 center: /usr/lib/x86_64-linux-gnu/libz.so
+center: /usr/lib/x86_64-linux-gnu/libexpat.so
+center: /usr/lib/x86_64-linux-gnu/libvtkDomainsChemistryOpenGL2-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libjpeg.so
 center: /usr/lib/x86_64-linux-gnu/libpng.so
 center: /usr/lib/x86_64-linux-gnu/libtiff.so
-center: /usr/lib/x86_64-linux-gnu/libexpat.so
-center: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneric-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelDIY2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelGeometry-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelImaging-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelMPI-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelStatistics-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersPoints-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersProgrammable-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersPython-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+center: /usr/lib/libvtkWrappingTools-7.1.a
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersReebGraph-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersSMP-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersSelection-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersVerdict-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkverdict-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOAMR-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
+center: /usr/lib/x86_64-linux-gnu/libsz.so
+center: /usr/lib/x86_64-linux-gnu/libdl.so
+center: /usr/lib/x86_64-linux-gnu/libm.so
+center: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+center: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
+center: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5_hl.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOEnSight-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
+center: /usr/lib/x86_64-linux-gnu/libnetcdf.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOExport-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingGL2PSOpenGL2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libgl2ps.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOFFMPEG-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOMovie-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
+center: /usr/lib/x86_64-linux-gnu/libtheoradec.so
+center: /usr/lib/x86_64-linux-gnu/libogg.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOGDAL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOGeoJSON-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOImport-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOInfovis-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libxml2.so
+center: /usr/lib/x86_64-linux-gnu/libvtkIOMINC-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOMPIImage-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOMPIParallel-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOParallel-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIONetCDF-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOMySQL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOODBC-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOParallelExodus-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOParallelLSDyna-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOParallelNetCDF-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOParallelXML-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOTecplotTable-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOVPIC-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkVPIC-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOVideo-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOXdmf2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkxdmf2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingMorphological-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingStatistics-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingStencil-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkInfovisBoostGraphAlgorithms-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkInteractionImage-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkLocalExample-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkParallelMPI4Py-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingExternal-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeTypeFontConfig-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingImage-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingMatplotlib-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallel-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallelLIC-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingSceneGraph-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeAMR-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkTestingIOSQL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkTestingRendering-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkViewsInfovis-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
-center: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_io.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_search.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
-center: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+center: /usr/local/lib/libpcl_ml.so
+center: /usr/local/lib/libpcl_io.so
+center: /usr/local/lib/libpcl_filters.so
+center: /usr/local/lib/libpcl_sample_consensus.so
+center: /usr/local/lib/libpcl_search.so
+center: /usr/local/lib/libpcl_octree.so
+center: /usr/lib/x86_64-linux-gnu/libvtkDomainsChemistry-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersFlowPaths-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
+center: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
+center: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
+center: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOExodus-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkexoIIc-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOLSDyna-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkWrappingPython38Core-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkPythonInterpreter-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallel-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkParallelMPI-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingLICOpenGL2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersAMR-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkParallelCore-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libGLEW.so
+center: /usr/lib/x86_64-linux-gnu/libSM.so
+center: /usr/lib/x86_64-linux-gnu/libICE.so
+center: /usr/lib/x86_64-linux-gnu/libX11.so
+center: /usr/lib/x86_64-linux-gnu/libXext.so
+center: /usr/lib/x86_64-linux-gnu/libXt.so
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingMath-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOSQL-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkGeovisCore-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkproj4-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersImaging-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkInfovisLayout-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1
+center: /usr/lib/x86_64-linux-gnu/libvtkRenderingLabel-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libfreetype.so
-center: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1
@@ -143,7 +262,6 @@ center: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1
@@ -152,17 +270,24 @@ center: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
 center: /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1
-center: /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1
+center: /usr/local/lib/libpcl_common.so
+center: /usr/lib/x86_64-linux-gnu/libfreetype.so
 center: /usr/lib/x86_64-linux-gnu/libz.so
-center: /usr/lib/x86_64-linux-gnu/libGLEW.so
-center: /usr/lib/x86_64-linux-gnu/libSM.so
-center: /usr/lib/x86_64-linux-gnu/libICE.so
-center: /usr/lib/x86_64-linux-gnu/libX11.so
-center: /usr/lib/x86_64-linux-gnu/libXext.so
-center: /usr/lib/x86_64-linux-gnu/libXt.so
+center: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+center: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
+center: /usr/lib/x86_64-linux-gnu/libsz.so
+center: /usr/lib/x86_64-linux-gnu/libdl.so
+center: /usr/lib/x86_64-linux-gnu/libm.so
+center: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+center: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
+center: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5_hl.so
+center: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
+center: /usr/lib/x86_64-linux-gnu/libnetcdf.so
+center: /usr/lib/x86_64-linux-gnu/libxml2.so
+center: /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so
+center: /usr/lib/x86_64-linux-gnu/libpthread.so
 center: CMakeFiles/center.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/habeeb-chisti/GRemove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable center"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beast/Desktop/Habeeb/3D-PCL-GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable center"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/center.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,6 +300,6 @@ CMakeFiles/center.dir/clean:
 .PHONY : CMakeFiles/center.dir/clean
 
 CMakeFiles/center.dir/depend:
-	cd /home/habeeb-chisti/GRemove/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/habeeb-chisti/GRemove /home/habeeb-chisti/GRemove /home/habeeb-chisti/GRemove/build /home/habeeb-chisti/GRemove/build /home/habeeb-chisti/GRemove/build/CMakeFiles/center.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beast/Desktop/Habeeb/3D-PCL-GS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beast/Desktop/Habeeb/3D-PCL-GS /home/beast/Desktop/Habeeb/3D-PCL-GS /home/beast/Desktop/Habeeb/3D-PCL-GS/build /home/beast/Desktop/Habeeb/3D-PCL-GS/build /home/beast/Desktop/Habeeb/3D-PCL-GS/build/CMakeFiles/center.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/center.dir/depend
 
